@@ -1,6 +1,3 @@
 # Virtual Pet
 
-Virtual Pet is an application where the user walks a virtual pet. The pet is represented by an icon that moves around 
-the canvas. Whenever the user moves the mouse over the canvas, the pet starts moving towards the mouse cursor. Once the 
-pet has reached the mouse cursor, it stops moving. The pet also stops moving if the user moves the mouse cursor outside 
-the canvas.
+An application called "Virtual Pet" allows users to take virtual pets for walks.  An symbol that rotates across the canvas represents the pet.  The pet begins to travel in the direction of the mouse cursor whenever the user moves the mouse across the canvas.  The pet stops moving when it reaches the mouse cursor.  Additionally, if the user moves the mouse pointer outside the canvas, the pet stops moving.
