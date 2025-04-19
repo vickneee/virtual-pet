@@ -1,3 +1,12 @@
 # Virtual Pet
 
-An application called "Virtual Pet" allows users to take virtual pet for walks.  An symbol that rotates across the canvas represents the pet.  The pet begins to travel in the direction of the mouse cursor whenever the user moves the mouse across the canvas.  The pet stops moving when it reaches the mouse cursor.  Additionally, if the user moves the mouse pointer outside the canvas, the pet stops moving.
+An application called "Virtual Pet" allows users to take virtual pet for walks. An animal image that rotates across the 
+canvas represents the pet. The pet begins to travel in the direction of the mouse cursor whenever the user moves the 
+mouse across the canvas. The pet stops moving when it reaches the mouse cursor. Additionally, if the user moves the 
+mouse pointer outside the canvas, the pet stops moving.
+
+## Tech used
+
+- Java
+- JavaFX
+- Maven
