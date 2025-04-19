@@ -2,14 +2,6 @@ package model;
 
 public class PetModel {
 
-    /*
-    The model consists of the Pet class that stores the pet's location. The pet is represented by an icon that moves
-    around the canvas. Whenever the user moves the mouse over the canvas, the pet starts moving towards the mouse cursor.
-    Once the pet has reached the mouse cursor, it stops moving. The pet also stops moving if the user moves the mouse
-    cursor outside the canvas.
-    Use the Image class for loading the pet image.
-    */
-
     // The pet's current position
     private double x;
     private double y;
