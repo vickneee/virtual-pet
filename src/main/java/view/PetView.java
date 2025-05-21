@@ -19,6 +19,7 @@ public class PetView extends Application {
     private GraphicsContext gc;
     private PetController controller;
     private Image petImage;
+    private Image backgroundImage;
 
     // Override init method
     @Override
@@ -31,11 +32,14 @@ public class PetView extends Application {
     public void start(Stage stage) {
 
         // Create a new Canvas and GraphicsContext
-        canvas = new Canvas(700, 700);
+        canvas = new Canvas(1400, 1000);
         gc = canvas.getGraphicsContext2D();
 
         // Load the pet image
         petImage = new Image((Objects.requireNonNull(getClass().getResource("/pet.jpg"))).toExternalForm());
+
+        // Load the background image
+        // backgroundImage = new Image((Objects.requireNonNull(getClass().getResource("/background.jpg"))).toExternalForm());
 
         // Mouse event handlers
         canvas.setOnMouseMoved(event -> {
@@ -58,7 +62,7 @@ public class PetView extends Application {
 
         // Set up the scene and stage
         StackPane root = new StackPane(canvas);
-        Scene scene = new Scene(root, 800, 800);
+        Scene scene = new Scene(root, 1400, 1000);
         stage.setTitle("Virtual Pet");
         stage.setScene(scene);
         stage.show();
@@ -71,6 +75,10 @@ public class PetView extends Application {
     public void updateCanvas(double x, double y) {
         // Clear the canvas and draw the pet image at the new position
         gc.clearRect(0, 0, canvas.getWidth(), canvas.getHeight());
+
+        // Draw the background image across the entire canvas
+        gc.drawImage(backgroundImage, 0, 0, canvas.getWidth(), canvas.getHeight());
+
         double imageWidth = 100; // Desired width
         double imageHeight = 100; // Desired height
         // Draw the pet image at the specified position, stopping if it reaches the mouse cursor
